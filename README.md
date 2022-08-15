@@ -1,3 +1,7 @@
+# flask tuitorial project
+
+https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/tutorial/index.html
+
 # env
 
 - WSL2 Ubuntu 20
