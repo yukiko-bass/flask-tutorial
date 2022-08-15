@@ -37,7 +37,7 @@ def register():
 
         if error is None:
             db.execute(
-                "INSERT INTO user (ujsername, password) VALUES (?, ?)",
+                "INSERT INTO user (username, password) VALUES (?, ?)",
                 (username, generate_password_hash(password)),
             )
             db.commit()
@@ -47,7 +47,7 @@ def register():
     return render_template("auth/register.html")
 
 
-@bp.route("/login", method=("GET", "POST"))
+@bp.route("/login", methods=("GET", "POST"))
 def login():
     if request.method == "POST":
         username = request.form["username"]
