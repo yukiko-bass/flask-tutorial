@@ -33,3 +33,9 @@ $ flask run
 ```
 $ flask init-db
 ```
+
+## project install
+
+```
+$ pip install -e .
+```
